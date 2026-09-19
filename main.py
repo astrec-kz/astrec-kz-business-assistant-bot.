@@ -48,6 +48,9 @@ CATEGORIES = [
     ("marketing", "📢 Маркетинговый анализ и план", "market"),
     ("training", "🎓 Обучение персонала", "market"),
     ("events", "🎪 Организация форумов, ивентов и стратегических сессий", "market"),
+    ("it", "💻 IT-направление", "market"),
+    ("product", "🚀 Product-менеджмент", "market"),
+    ("project_mgmt", "📋 Project-менеджмент", "market"),
 ]
 CATEGORY_LABELS = {key: label for key, label, _ in CATEGORIES}
 
