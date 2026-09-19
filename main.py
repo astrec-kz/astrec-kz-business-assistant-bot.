@@ -51,6 +51,7 @@ CATEGORIES = [
     ("it", "💻 IT-направление", "market"),
     ("product", "🚀 Product-менеджмент", "market"),
     ("project_mgmt", "📋 Project-менеджмент", "market"),
+    ("interpretation", "🎧 Синхронный перевод", "market"),
 ]
 CATEGORY_LABELS = {key: label for key, label, _ in CATEGORIES}
 
