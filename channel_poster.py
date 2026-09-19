@@ -173,7 +173,8 @@ async def main() -> None:
         raise RuntimeError("Не задан BOT_TOKEN в переменных окружения")
 
     today = date.today()
-    if today.weekday() not in POST_WEEKDAYS:
+    force = os.environ.get("FORCE_POST", "").lower() in ("1", "true", "yes")
+    if not force and today.weekday() not in POST_WEEKDAYS:
         logger.info("Сегодня не день публикации — выхожу без действий")
         return
 
